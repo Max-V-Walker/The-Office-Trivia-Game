@@ -1,0 +1,296 @@
+.setLevelBtn, #gameSection, #finalResultsBtn, #nextQuestionBtn, #finalScore, #gameRank, #playAgainBtn{
+    display: none;
+}
+
+body {
+    background-image: url(images/landingPageBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "Special Elite", cursive;
+}
+
+#startSection{
+    text-align: center;
+    background-color: #fcf5e3;
+    border: #c2885d 5px solid;
+    padding: 25px 25px 5px 25px;
+    border-radius: 10px;
+    width: 55%;
+    margin: 80px 100% auto 60px;
+    background-attachment: fixed;
+}
+
+.playBtn, #nextQuestionBtn{
+    font-family: "Special Elite", cursive;
+    background-color: #ffffbf;
+    border: black solid 2px;
+    border-radius: 35%;
+    padding: .8em;
+    width: 10%;
+    min-width: 52.5px;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#setLevelBtns{
+    width: 40%;
+    min-width: 190px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-around;
+    transition: .2s;
+}
+
+.setLevelBtn{
+    font-family: "Special Elite", cursive;
+    background-color: #ffffbf;
+    border: black solid 2px;
+    border-radius: 35%;
+    margin: 0 1em;
+    padding: .8em;
+
+}
+
+.homeBtns:hover, #nextQuestionBtn:hover{
+    border-color: #FFDE2E;
+    color: #FFDE2E;
+    background-color: #e2aeb4;
+    box-shadow: 0 .5em .8em -4.5px #296e01;
+    transform: translateY(-.5em);
+    cursor: pointer;
+}
+
+.introText{
+    border-bottom: 3px solid #c2885d;
+}
+
+#introText > p {
+    width: 75%;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+p{
+    word-spacing: .2em;
+}
+
+.portraitModeCoverUp{
+    display: none;
+}
+
+
+/*  - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/*  - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* Game Play Area */
+
+#score{
+    font-size: 1.5em;
+    width: 10%;
+    min-width: 120px;
+    margin: 5% 0 -20px 25%;
+    padding-right: 0;
+}
+
+#gameSection{
+    background-color: #FAF9F6;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 575px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.optionBtns{
+    font-family: "Special Elite", cursive;
+    background-color: #ffffbf;
+    border: black solid 2px;
+    border-radius: 35%;
+    padding: .8em;
+    width: 18%;
+    min-width: 110px;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.optionBtns:hover{
+    text-decoration: underline;
+    font-size: .9em;
+    border-color: #e2aeb4;
+    color: #e2aeb4;
+    /* background-color: #e2aeb4; Background-color is set in script file */
+    box-shadow: -.2em .6em .8em -4.5px #296e01;
+    transform: translateY(-.5em);
+    cursor: pointer;
+}
+
+#answerBtns{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.qResults{
+    border: 2px solid #c2885d;
+    border-radius: 5px;
+    margin: 2em auto .5em;
+    padding: 5px;
+    display: none;
+}
+
+#questionContainer{
+    text-align: center;
+}
+
+#gameSummary{
+    word-spacing: .2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 45%;
+    height: 60%;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#playAgainBtn, #finalResultsBtn{
+    margin: 2em auto 0;
+    font-family: "Special Elite", cursive;
+    background-color: #ffffbf;
+    border: black solid 2px;
+    border-radius: 35%;
+    padding: .8em;
+    width: 15%;
+    min-width: 63.5px;
+    text-align: center;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#finalResultsBtn{
+    margin-left: 0;
+    width: 70px;
+}
+
+#playAgainBtn:hover, #finalResultsBtn:hover{
+    border-color: #FFDE2E;
+    color: #FFDE2E;
+    background-color: #e2aeb4;
+    box-shadow: 0 .5em .8em -4.5px #296e01;
+    transform: translateY(-.5em);
+    cursor: pointer;
+}
+
+#finalScore{
+    border-bottom: 2px solid #c2885d;
+
+}
+
+img{
+    width: 75%;
+    height: 45%;
+    margin: 0 auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* Media Queries */
+
+/* For Home Screen */
+@media(max-width: 415px){
+    body{
+        background-image: url(images/landscapeBackground.jpg);
+        background-position: 45%;
+    }
+    #startSection, #gameSection{
+        display: none;
+    }
+    .portraitModeCoverUp{
+        display: inline-block;
+        background-color: rgba(255,255,255,.85);
+        border: 5px solid #e2aeb4;
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        font-size: 2rem;
+        text-align: center;
+        padding: 25px 10px 0;
+        margin: 170px 10% 0;
+        line-height: 40px;
+        box-shadow: 0 .5em .8em -4.5px #296e01;
+    }
+
+    .jsUpdatePortaitMode{
+        border: 5px solid #FFDE2E;
+        transform: translateY(-5px)
+    }
+}
+
+@media(max-width: 850px) and (orientation: landscape){
+    #startSection{
+        width: 100%;
+        max-width: 475px;
+        border: 1px solid #c2885d;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 0;
+        line-height: 15px;
+    }
+    #introText{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #introText p{
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .playBtn{
+        margin-top: 0;
+    }
+    h1, h3{
+        margin: 15px auto;
+    }
+    #setLevelBtns{
+        padding: 0 25px 5px;
+    }
+    #score{
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+    #gameSection{
+        margin-top: 40px;
+        width: 70%;
+    }
+    #answerBtns{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #gameSummary{
+        color: black;
+    }
+    #finalResultsBtn{
+        margin-left: 0;
+    }
+    .likeHoverEffect{
+        border-color: #FFDE2E;
+        color: #FFDE2E;
+        background-color: #e2aeb4;
+        box-shadow: 0 .5em .8em -4.5px #296e01;
+        transition: .5s transform;
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office Trivia Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="startSection">
+        <h1>The Office Trivia</h1>
+        <h3 class="introText">Play Our Free Trivia Game Based On NBC's, The Office</h3>
+
+        <div id="introText">
+            <p>Select your level of difficulty and proceed through the provided questions that are designed to be answered correctly, only by a true Office fan! 
+            <br><br>
+            You'll gain 5 points for every correctly answered question and should you get one incorrect, no harm to your total score! Venture through and see what your fan total is by the end of the game.
+            <br><br>
+            If you think you should've performed better, watch another few rounds of the series and come back when you've put in the time!
+            </p>
+            
+            <button class="homeBtns playBtn">Play</button>
+            <div id="setLevelBtns">
+                <button class="setLevelBtn homeBtns" id="beginnerBtn">Beginner</button>
+                <button class="setLevelBtn homeBtns" id="intermediateBtn">Intermediate</button>
+                <button class="setLevelBtn homeBtns" id="difficultBtn">Difficult</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <!-- Game Page -->
+    <div>
+        <h3 id="score"></h3>
+    </div>
+    <section id="gameSection">
+
+        <div id="questionsBox">
+            <h1 id="questionContainer"></h1>
+
+            <div id="answerBtns">
+                <button class="optionBtns" id="answerBtn1"></button>
+                <button class="optionBtns" id="answerBtn2"></button>
+                <button class="optionBtns" id="answerBtn3"></button>
+                <button class="optionBtns" id="answerBtn4"></button>
+            </div>
+
+            <div class="qResults">
+                <h4 id="wrongCorrect"></h4>
+                <img id="imageContainer"></img>
+            </div>
+            
+
+            <button id="nextQuestionBtn">Next</button>
+            <button id="finalResultsBtn">Results</button>
+        </div>
+    </section>
+
+    <summary id="gameSummary">
+        <h2 id="finalScore"></h2>
+        <h2 id="gameRank"></h2>
+        <button id="playAgainBtn">Play Again!</button>
+    </summary>
+
+    <div>
+        <p class="portraitModeCoverUp">Turn <br> Device <br> To <br> Landscape Mode <br> To Play!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
