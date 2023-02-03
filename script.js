@@ -386,6 +386,8 @@ function displayResults(){
 
     gameRank.innerText = `${scoreResult}`
     gameRank.style.display="block"
+    gameRank.style.margin="0 auto"
+    gameRank.style.width="75%"
 
     playAgainBtn.style.display="block"
 }
