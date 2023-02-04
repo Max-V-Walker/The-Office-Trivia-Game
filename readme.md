@@ -2,7 +2,9 @@
 
 This project is a fun and simplistic take on a trivia game based off NBC's, The Office.
 
-Questions for each difficulty are randomized that way each time you play, it's a different set of questions presented to the player.
+Questions for each difficulty are randomized that way each time you play, it's a different set of questions presented to the player. Guess a question correctly, and gain 5 points to your total score. Guess a question incorrectly, and no harm will come to your total score. 
+
+See at the end our thoughts on your level of Office fandom!
 
 https://the-office-trivia-game.vercel.app/
 
